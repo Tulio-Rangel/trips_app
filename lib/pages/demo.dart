@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:trips_app/components/description_place.dart';
 
 class DemoPage extends StatelessWidget {
   const DemoPage({super.key});
@@ -8,38 +9,10 @@ class DemoPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         leading: const Icon(Icons.home),
-        title: Text('TripsApp Demo'),
+        title: const Text('TripsApp Demo'),
         centerTitle: true,
       ),
-      body: Stack(
-        children: <Widget>[
-          _imagenFondo(),
-          _textoCentral(),
-        ],
-      ),
-    );
-  }
-
-  Widget _imagenFondo() {
-    return const Image(
-      image: AssetImage('assets/images/space.jpg'),
-      height: double.infinity,
-      width: double.infinity,
-      fit: BoxFit.cover,
-    );
-  }
-
-  Widget _textoCentral() {
-    return Center(
-      child: Container(
-        height: 100,
-        color: const Color.fromRGBO(0, 0, 0, 0.5),
-        child: const Center(
-          child: Text('Tulio Rangel 😎',
-          style: TextStyle(fontSize: 40, color: Colors.white),
-          ),
-        ),
-      ),
+      body: const DescriptionPlace(),
     );
   }
 }
