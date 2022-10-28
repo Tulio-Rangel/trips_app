@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:trips_app/components/description_place.dart';
+import 'package:trips_app/components/gradient_back.dart';
 import 'package:trips_app/components/review.dart';
 
 class DemoPage extends StatelessWidget {
@@ -13,10 +14,15 @@ class DemoPage extends StatelessWidget {
         title: const Text('TripsApp Demo'),
         centerTitle: true,
       ),
-      body: Column(
-        children: const <Widget>[
-          DescriptionPlace(),
-          Review()
+      body: Stack(
+        children: <Widget>[
+          ListView(
+            children: const [
+              DescriptionPlace(),
+              Review(),
+            ],
+          ),
+          const GradientBack(),
         ],
       ),
     );

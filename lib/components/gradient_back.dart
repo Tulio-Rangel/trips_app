@@ -13,9 +13,9 @@ class GradientBack extends StatelessWidget {
             Color(0xFFE91E63),
             Color(0xFFF06292)
           ],
-          begin: FractionalOffset(0.2, 0.0),
-          end: FractionalOffset(1.0, 0.6),
-          stops: [0.0, 0.6],
+          begin: FractionalOffset(0.0, 0.0),
+          end: FractionalOffset(0.0, 1.5),
+          stops: [0.0, 0.5],
           tileMode: TileMode.clamp
         )
       ),
