@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:trips_app/components/card_image.dart';
 import 'package:trips_app/components/description_place.dart';
 import 'package:trips_app/components/gradient_back.dart';
+import 'package:trips_app/components/header_appbar.dart';
 import 'package:trips_app/components/review.dart';
 
 class DemoPage extends StatelessWidget {
@@ -22,7 +24,7 @@ class DemoPage extends StatelessWidget {
               Review(),
             ],
           ),
-          const GradientBack(),
+          const HeaderAppBar(),
         ],
       ),
     );

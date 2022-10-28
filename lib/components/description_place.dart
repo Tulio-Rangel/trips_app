@@ -23,7 +23,7 @@ class DescriptionPlace extends StatelessWidget {
     );
 
     final title = Align(
-      alignment: Alignment.centerLeft,
+      //alignment: Alignment.centerLeft,
       child: Container(
             margin: const EdgeInsets.only(
               top: 320.0,
