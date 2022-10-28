@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:trips_app/components/description_place.dart';
+import 'package:trips_app/components/review.dart';
 
 class DemoPage extends StatelessWidget {
   const DemoPage({super.key});
@@ -12,7 +13,12 @@ class DemoPage extends StatelessWidget {
         title: const Text('TripsApp Demo'),
         centerTitle: true,
       ),
-      body: const DescriptionPlace(),
+      body: Column(
+        children: const <Widget>[
+          DescriptionPlace(),
+          Review()
+        ],
+      ),
     );
   }
 }
