@@ -19,5 +19,5 @@ class CardList extends StatelessWidget {
         ),
       )
     );
-}
+  }
 }
